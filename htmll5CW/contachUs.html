@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="play.js"></script>
+</head>
+<body> <!--onload="loadData()"-->
+
+    <header>
+    Hanan Meir Photographer
+    </header>
+    <section id="contentAndMenu">
+        <aside>
+            menu
+            <nav> 
+                <a href="index.html">Home Page</a>
+                <br /><br />
+                <a href="#">Products</a>
+                <br/><br />
+                <a href="contachUs.html">ContactUS</a>
+            </nav>
+             </aside>
+        
+        <section id="content">
+
+            <form action="save.html">
+
+                <input type="email" placeholder="Enter Email" required/>
+                <br/><br />
+                <input type="url" placeholder="Enter URL" />
+                <br /><br />
+                <input type="tel" placeholder="Enter Telephone" pattern="05\d{8}" />
+                <br /><br />
+                <input type="submit" value="Send" onclick="saveDetails()" />
+                <br /><br />
+                <br /><br />
+                <br /><br />
+                <br /><br />
+
+                <input type="button" value="Show your Location" onclick="showUserLocation()" />
+            </form>
+
+        </section>
+
+    </section>
+
+    <footer>
+        All Rights Reserved &copy;
+        <input type="button" value="change Color" onclick="changeColor()"/>
+        <input id="myColor" type="color" />
+    </footer>
+
+</body>
+</html>
